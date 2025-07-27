@@ -18,11 +18,11 @@ export default function PreorderBonusPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        {/* Bonus 1: Coloring Book - UPDATED IMAGE */}
+        {/* Bonus 1: Coloring Book - CORRECTED PATH */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/concept art/IMG_6005.jpg" 
-            alt="Sketch of Jeffrey and Barry" 
+            alt="Sketch of Jeffrey and Barry in a classroom" 
             width={400} 
             height={300} 
             className="object-contain mb-6 border-2 border-light-text dark:border-dark-text" 
@@ -33,7 +33,7 @@ export default function PreorderBonusPage() {
           </p>
         </div>
 
-        {/* Bonus 2: Limited Edition - UPDATED IMAGE */}
+        {/* Bonus 2: Limited Edition - CORRECTED PATH */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/concept art/IMG_6007.jpg" 
