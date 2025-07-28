@@ -6,7 +6,7 @@ export const characters = {
   jeffrey: {
     id: 'jeffrey',
     name: "Jeffrey",
-    image: "/images/characters/jeffree.jpg", 
+    image: "/images/characters/new jeffree.jpg", 
     bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school..."
   },
   barry: {
