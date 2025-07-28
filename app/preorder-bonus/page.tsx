@@ -18,7 +18,7 @@ export default function PreorderBonusPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        {/* Bonus 1: Coloring Book - CORRECTED PATH */}
+        {/* Bonus 1: Coloring Book */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/concept art/IMG_6005.jpg" 
@@ -33,7 +33,7 @@ export default function PreorderBonusPage() {
           </p>
         </div>
 
-        {/* Bonus 2: Limited Edition - CORRECTED PATH */}
+        {/* Bonus 2: Limited Edition */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/concept art/IMG_6007.jpg" 

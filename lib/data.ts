@@ -28,7 +28,6 @@ export const characters = {
     bio: "Sam is a highly intelligent, driven, and perfectionistic student..."
   }
 };
-
 export const homepageSlideshowImages = [
     "/images/concept art/corrected_comic_panel.jpg",
     "/images/concept art/first concept image jeffree smonty .jpg",
@@ -50,6 +49,7 @@ export const conceptArtImages = [
     "/images/concept art/IMG_6072.jpg",
     "/images/concept art/IMG_6073.jpg"
 ];
+
 
 export type Character = typeof characters[keyof typeof characters];
 export type CharacterId = keyof typeof characters;
