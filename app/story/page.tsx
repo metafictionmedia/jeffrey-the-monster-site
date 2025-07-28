@@ -40,8 +40,8 @@ export default function StoryPage() {
       <section>
         <h2 className="text-4xl sm:text-5xl text-center mb-8">Concept Art</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {conceptArtImages.map((src) => (
-            <div key={src} className="comic-panel p-2">
+          {conceptArtImages.map((src, index) => (
+            <div key={index} className="comic-panel p-2">
               <div className="relative aspect-square">
                 <Image src={src} alt="Concept art" fill className="object-cover" />
               </div>
