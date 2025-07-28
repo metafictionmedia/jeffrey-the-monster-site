@@ -39,7 +39,6 @@ export const conceptArtImages = [
     "/images/concept art/first concept image jeffree smonty .jpg",
     "/images/concept art/IMG_6057.jpg",
     "/images/concept art/IMG_5965.jpg",
-    "/images/concept art/IMG_6007.jpg",
 ];
 
 
