@@ -6,7 +6,7 @@ export const characters = {
   jeffrey: {
     id: 'jeffrey',
     name: "Jeffrey",
-    image: "/images/characters/jeffree.JPG",
+    image: "/images/characters/jeffree.jpg",
     bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school. He carries himself with the perpetually unimpressed and weary attitude of a grumpy old man, despite being a teenager. His typical outfit, featuring a backwards cap and a sarcastic t-shirt, combined with his generally withdrawn nature, suggests he uses a wall of annoyance to keep others at a distance. He is not one for small talk and is easily irritated by unexpected events or overly enthusiastic people, as seen in his interactions with Barry. Beneath the grumpy exterior, Jeffrey seems to be a creature of habit and order who gets flustered when things go wrong, like the threat of rain on his fur or the indignity of being splashed with gutter water. He is clearly intelligent, using a PDA-like device to check the weather, but he is also self-conscious, as shown by his reluctant decision to wear pants after being called out. His first day of school is already a series of unfortunate events, setting the stage for a difficult adjustment period where his patience will be thoroughly tested."
   },
   barry: {
@@ -18,13 +18,13 @@ export const characters = {
   smonty: {
     id: 'smonty',
     name: "sMonty",
-    image: "/images/characters/smonty.JPG",
+    image: "/images/characters/smonty.jpg",
     bio: "sMonty is a green, humanoid puppet monster who holds the title of the most popular puppet at school—a title that was uncontested until Jeffrey's arrival. He projects an aura of effortless cool, with his sunglasses, stylish hoodie, and confident demeanor. He travels with an entourage of friends and clearly enjoys being the center of attention, taking immediate and cruel delight in Jeffrey's public misfortune. His introduction, laughing from the safety of the school bus, establishes him as the primary antagonist. He represents the social challenge Jeffrey will have to face. Barry's description of him as 'disgustingly' popular suggests that sMonty's charm may be superficial, masking a mean-spirited or bullying nature. His actions are calculated to maintain his social standing by targeting and mocking the newcomer, making a confrontation between him and Jeffrey seem inevitable."
   },
   sam: {
     id: 'sam',
     name: "Sam",
-    image: "/images/characters/sam.PNG",
+    image: "/images/characters/sam.png",
     bio: "Sam is a highly intelligent, driven, and perfectionistic student whose entire focus is on academic excellence. She operates with a critical eye and has zero tolerance for laziness or mediocrity, a trait that often causes her to inadvertently push her peers away. This self-imposed isolation, born from her high standards, has made her something of a loner, similar in status but different in reason to Jeffrey and Barry. Her intense focus on school may be a response to her home life, where her parents are described as being in their own world, leaving her feeling overlooked and channeling her energy into the one area she can control: her grades. Her primary motivation is to be the best, and she perceives anyone or anything that might jeopardize her academic standing as a direct threat. This makes her fiercely competitive and protective of her goals. Her world is set to be turned upside down when she is forced into a group with Jeffrey and Barry for the school talent show. The prospect of working with Jeffrey's cynical apathy and Barry's scattered energy will be a supreme test of her patience, forcing her to navigate a collaborative dynamic that is completely at odds with her perfectionist, independent nature."
   }
 };

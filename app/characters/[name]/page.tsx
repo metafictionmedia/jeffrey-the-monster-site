@@ -8,7 +8,6 @@ type Props = {
   params: { name: CharacterId }
 }
 
-// Generate metadata for each character page
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const character = characters[params.name];
 
@@ -24,7 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-// Generate static pages for each character at build time
 export async function generateStaticParams() {
   return Object.keys(characters).map((name) => ({
     name,
@@ -40,9 +38,9 @@ export default function CharacterBioPage({ params }: Props) {
 
   return (
     <div className="container mx-auto px-4 py-12 sm:py-20">
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-1">
-          <div className="comic-panel p-4">
+      <div className="grid lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-1">
+          <div className="comic-panel p-4 max-w-sm mx-auto">
             <div className="relative aspect-[3/4] w-full">
               <Image
                 src={character.image}
@@ -53,10 +51,10 @@ export default function CharacterBioPage({ params }: Props) {
             </div>
           </div>
         </div>
-        <div className="md:col-span-2">
-            <div className="comic-panel p-8 h-full">
-                <h1 className="text-6xl md:text-8xl text-accent-green-dark dark:text-accent-green mb-6">{character.name}</h1>
-                <p className="font-body text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary whitespace-pre-line">
+        <div className="lg:col-span-2">
+            <div className="comic-panel p-6 md:p-8 h-full">
+                <h1 className="text-5xl sm:text-6xl md:text-8xl text-accent-green-dark dark:text-accent-green mb-6">{character.name}</h1>
+                <p className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary whitespace-pre-line">
                     {character.bio}
                 </p>
             </div>
