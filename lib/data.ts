@@ -6,16 +6,16 @@ export const characters = {
   jeffrey: {
     id: 'jeffrey',
     name: "Jeffrey",
-    image: "/images/characters/new jeffree.jpg", 
+    image: "/images/characters/new jeffrey.jpg", 
     bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school. He carries himself with the perpetually unimpressed and weary attitude of a grumpy old man, despite being a teenager. His typical outfit, featuring a backwards cap and a sarcastic t-shirt, combined with his generally withdrawn nature, suggests he uses a wall of annoyance to keep others at a distance. He is not one for small talk and is easily irritated by unexpected events or overly enthusiastic people, as seen in his interactions with Barry.Beneath the grumpy exterior, Jeffrey seems to be a creature of habit and order who gets flustered when things go wrong, like the threat of rain on his fur or the indignity of being splashed with gutter water. He is clearly intelligent, using a PDA-like device to check the weather, but he is also self-conscious, as shown by his reluctant decision to wear pants after being called out. His first day of school is already a series of unfortunate events, setting the stage for a difficult adjustment period where his patience will be thoroughly tested."
   },
   barry: {
     id: 'barry',
     name: "Barry",
     image: "/images/characters/New Barry.jpg", // Using the new colored image
-    bio: "Barry is a kind-hearted, energetic, and extremely talkative human kid who is tasked with walking Jeffrey to school. He appears to be younger than Jeffrey and possesses a childlike innocence and curiosity, looking at Jeffrey's tech with wonder and openly sharing his thoughts on everything from the weather to schoolyard politics. He is unabashedly himself, admitting he talks too much but seeing it as a core part of his identity. His friendly and slightly naive nature makes him the complete opposite of the cynical Jeffrey. Despite his chattiness, Barry is also observant and socially aware. He immediately recognizes sMonty on the bus and understands the social hierarchy of their school, knowing that sMonty's popularity means Jeffrey's embarrassing moment will quickly become public knowledge. He acts as a guide and an exposition-provider for both Jeffrey and the audience, establishing the world and its key players through his non-stop, good-natured chatter.
-  }
-    smonty: {
+    bio: "Barry is a kind-hearted, energetic, and extremely talkative human kid who is tasked with walking Jeffrey to school. He appears to be younger than Jeffrey and possesses a childlike innocence and curiosity, looking at Jeffrey's tech with wonder and openly sharing his thoughts on everything from the weather to schoolyard politics. He is unabashedly himself, admitting he talks too much but seeing it as a core part of his identity. His friendly and slightly naive nature makes him the complete opposite of the cynical Jeffrey. Despite his chattiness, Barry is also observant and socially aware. He immediately recognizes sMonty on the bus and understands the social hierarchy of their school, knowing that sMonty's popularity means Jeffrey's embarrassing moment will quickly become public knowledge. He acts as a guide and an exposition-provider for both Jeffrey and the audience, establishing the world and its key players through his non-stop, good-natured chatter."
+  },
+  smonty: {
     id: 'smonty',
     name: "sMonty",
     image: "/images/characters/smonty.jpg", 
