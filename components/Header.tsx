@@ -7,8 +7,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const navLinks = [
-    { href: "/about", label: "About" },
+    { href: "/story", label: "Story" },
     { href: "/characters", label: "Characters" },
+    { href: "/creator", label: "Creator" },
     { href: "/preorder-bonus", label: "Bonus" },
     { href: "/store", label: "Store" },
 ];
@@ -27,13 +28,13 @@ export default function Header() {
                      <Image src="/images/logos/current jeffrey logo homepage.PNG" alt="Jeffrey the Monster Logo" width={50} height={50} />
                      <span className="font-heading text-xl md:text-2xl hidden sm:block">Jeffrey The Monster</span>
                 </Link>
-                <nav className="flex items-center gap-2 sm:gap-4 md:gap-6">
+                <nav className="flex items-center gap-1 sm:gap-2 md:gap-4">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
                             className={cn(
-                                "font-sans font-semibold text-base md:text-lg hover:text-accent-purple transition-colors px-1",
+                                "font-sans font-semibold text-sm sm:text-base md:text-lg hover:text-accent-purple transition-colors px-1",
                                 pathname.startsWith(link.href) ? "text-accent-purple" : "text-light-text-secondary dark:text-dark-text-secondary"
                             )}
                         >

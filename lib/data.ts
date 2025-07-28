@@ -6,25 +6,25 @@ export const characters = {
   jeffrey: {
     id: 'jeffrey',
     name: "Jeffrey",
-    image: "/images/characters/jeffree.jpg", // Corrected to lowercase
+    image: "/images/characters/jeffree.jpg", 
     bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school..."
   },
   barry: {
     id: 'barry',
     name: "Barry",
-    image: "/images/characters/IMG_3742.jpg", // Swapped image
+    image: "/images/characters/New Barry.jpg", // Using the new colored image
     bio: "Barry is a kind-hearted, energetic, and extremely talkative human kid..."
   },
   smonty: {
     id: 'smonty',
     name: "sMonty",
-    image: "/images/characters/smonty.jpg", // This one is working
+    image: "/images/characters/smonty.jpg", 
     bio: "sMonty is a green, humanoid puppet monster who holds the title of the most popular puppet at school..."
   },
   sam: {
     id: 'sam',
     name: "Sam",
-    image: "/images/characters/sam 2.jpg", // Swapped image
+    image: "/images/characters/sam 2.jpg", 
     bio: "Sam is a highly intelligent, driven, and perfectionistic student..."
   }
 };

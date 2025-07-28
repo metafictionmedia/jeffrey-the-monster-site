@@ -13,12 +13,9 @@ export default function HomePage() {
 
       {/* --- MOBILE LAYOUT (Visible on small screens, hidden on medium and up) --- */}
       <div className="flex flex-col gap-4 md:hidden">
-        {/* Hero Slideshow */}
         <div className="comic-panel relative overflow-hidden h-64">
           <ImageSlideshow images={homepageSlideshowImages} />
         </div>
-        
-        {/* Logo */}
         <div className="comic-panel flex items-center justify-center p-4 h-40">
           <Image
             src="/images/logos/current jeffrey logo homepage.PNG"
@@ -28,19 +25,16 @@ export default function HomePage() {
             className="object-contain h-full w-auto"
           />
         </div>
-
-        {/* Synopsis */}
         <div className="comic-panel p-6 relative">
           <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
           <p className="font-body text-base/relaxed text-light-text-secondary dark:text-dark-text-secondary">
             {synopsis}
           </p>
         </div>
-
-        {/* CTAs */}
         <div className="comic-panel flex flex-col items-center justify-evenly p-4 gap-4">
-          <ComicButton href="/about">About</ComicButton>
+          <ComicButton href="/story">Story</ComicButton>
           <ComicButton href="/characters">Characters</ComicButton>
+          <ComicButton href="/creator">Creator</ComicButton>
           <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
           <ComicButton href="/store">Store</ComicButton>
         </div>
@@ -74,10 +68,11 @@ export default function HomePage() {
 
         {/* Panel 4: CTAs */}
         <div className="md:col-span-3 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
-          <ComicButton href="/about">About</ComicButton>
-          <ComicButton href="/characters">Characters</ComicButton>
-          <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
-          <ComicButton href="/store">Store</ComicButton>
+            <ComicButton href="/story">Story</ComicButton>
+            <ComicButton href="/characters">Characters</ComicButton>
+            <ComicButton href="/creator">Creator</ComicButton>
+            <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
+            <ComicButton href="/store">Store</ComicButton>
         </div>
       </div>
     </div>
