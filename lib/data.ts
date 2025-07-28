@@ -2,35 +2,33 @@ export const synopsis = "After moving to a new neighborhood a week ago, Jeffrey 
 
 export const creatorBio = "I've been writing since I was in high school and have been passionate about graphic novels since I was a kid, and more so after graduating art school from the Art Institute of Orange County, Costa Mesa. This story was actually inspired by a comedy sitcom spec screenplay I had written back in 2012 or so that was intended to be a live action adult comedy that blended a world like the Muppets with real life, imagining puppets as another type of people in the world with their own cultural uniqueness and quirks. In that original screenplay, the character of Smonty here was the protagonist there, named Monty. Jeffree at the time was the antagonist, an over the hill famous puppet monster that children loved for his popular show that he starred in for over 10 years. Monty was a dreamer with plans of breaking into Hollywood with his naive ideals and optimism while Jeffree was the guy who hated who he was and the kids who loved him, and wanted to go back to being the monster he always was: making horror movies where he was the Monster. Except his studio contract wouldn't allow it, and he would make things difficult for his agent, who's name was Sam (she may or may not be the same Sam he meets here, it has yet to be determined). To keep. him in line, she tasks her assistant Barry (who also may or may not be the same Barry here) to keep him in line, but Barry isn't quite the strong minded person needed for that and Jeffree tries to make everything as hard as possible for the both of them. Monty's new roommate in the script was Sam's best friend, and he tries to get him to introduce the two so he can make his great impression and get. his foot in the door. \n\nIt was a story that always stuck with me and when I had the idea to do a graphic novel now, one of the first ones to come up was: what if I focused on Jeffree as a teenager before he gets to where he is in that script? One of his throwaway lines that seemed to stick with me was that he wrote a 1500 page autobiography that no one wanted to publish but that he quotes constantly to make his points and is always complaining that the studio stole it from him so they could water it down and turn it in to a children's book that make him into this sweet funny character that isn't him. And so I thought, what if I did that book, the story that IS the watered down version of his autobiography. So while this has taken a few detours on the way to becoming complete, the soul of that idea is still there beneath it all: this is the story of Jeffree's teenage years and actually happened. Is it the watered down kids version he hates though? Probably not. Is it his overwritten and pretentious 1500 page manuscript brought to life with artwork and panels? No way, that's ridiculous. It's more like an amalgamation of the two. It sticks closer to the truth of who he was and his story while avoiding the constant patting on the back and complaining about everyone else that take up most of the pages he whines about. \n\nThis is the first of four parts, which all will be released as a complete book next year. I hope you enjoy it, and eventually come to tolerate Jeffree like Barry and Sam eventually do. He may not seem like it,  but he lives to entertain.";
 
-// Image paths have been corrected to match the user-provided file list exactly.
 export const characters = {
   jeffrey: {
     id: 'jeffrey',
     name: "Jeffrey",
-    image: "/images/characters/jeffree.JPG", 
-    bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school. He carries himself with the perpetually unimpressed and weary attitude of a grumpy old man, despite being a teenager. His typical outfit, featuring a backwards cap and a sarcastic t-shirt, combined with his generally withdrawn nature, suggests he uses a wall of annoyance to keep others at a distance..."
+    image: "/images/characters/jeffree.jpg", // Corrected to lowercase
+    bio: "Jeffrey is a purple, puppet-like monster, new to his town and high school..."
   },
   barry: {
     id: 'barry',
     name: "Barry",
-    image: "/images/characters/Barry.jpg", 
-    bio: "Barry is a kind-hearted, energetic, and extremely talkative human kid who is tasked with walking Jeffrey to school. He appears to be younger than Jeffrey and possesses a childlike innocence and curiosity, looking at Jeffrey's tech with wonder and openly sharing his thoughts on everything from the weather to schoolyard politics..."
+    image: "/images/characters/IMG_3742.jpg", // Swapped image
+    bio: "Barry is a kind-hearted, energetic, and extremely talkative human kid..."
   },
   smonty: {
     id: 'smonty',
     name: "sMonty",
-    image: "/images/characters/smonty.jpg", 
-    bio: "sMonty is a green, humanoid puppet monster who holds the title of the most popular puppet at school—a title that was uncontested until Jeffrey's arrival. He projects an aura of effortless cool, with his sunglasses, stylish hoodie, and confident demeanor..."
+    image: "/images/characters/smonty.jpg", // This one is working
+    bio: "sMonty is a green, humanoid puppet monster who holds the title of the most popular puppet at school..."
   },
   sam: {
     id: 'sam',
     name: "Sam",
-    image: "/images/characters/sam.jpg", 
-    bio: "Sam is a highly intelligent, driven, and perfectionistic student whose entire focus is on academic excellence. She operates with a critical eye and has zero tolerance for laziness or mediocrity, a trait that often causes her to inadvertently push her peers away..."
+    image: "/images/characters/sam 2.jpg", // Swapped image
+    bio: "Sam is a highly intelligent, driven, and perfectionistic student..."
   }
 };
 
-// Paths corrected to include spaces and match file extensions.
 export const homepageSlideshowImages = [
     "/images/concept art/corrected_comic_panel.jpg",
     "/images/concept art/first concept image jeffree smonty .jpg",
