@@ -31,23 +31,15 @@ export const characters = {
 export const homepageSlideshowImages = [
     "/images/concept art/corrected_comic_panel.jpg",
     "/images/concept art/first concept image jeffree smonty .jpg",
-    "/images/concept art/garage_panel_colorized.jpg",
-    "/images/concept art/Image 2.jpg",
     "/images/concept art/IMG_6057.jpg"
 ];
 
 export const conceptArtImages = [
     "/images/concept art/corrected_comic_panel.jpg",
     "/images/concept art/first concept image jeffree smonty .jpg",
-    "/images/concept art/garage_panel_colorized.jpg",
-    "/images/concept art/Image 2.jpg",
     "/images/concept art/IMG_6057.jpg",
-    "/images/concept art/IMG_5961 (1).jpg",
     "/images/concept art/IMG_5965.jpg",
-    "/images/concept art/IMG_5967.jpg",
-    "/images/concept art/IMG_6004.jpg",
-    "/images/concept art/IMG_6072.jpg",
-    "/images/concept art/IMG_6073.jpg"
+    "/images/concept art/IMG_6007.jpg",
 ];
 
 
