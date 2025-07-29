@@ -1,14 +1,14 @@
 import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
 import type { Metadata } from "next";
-import { preorderBonusInfo } from "@/lib/data";
+import { preorderBonuses } from "@/lib/data"; // This now correctly imports our data
 
 export const metadata: Metadata = {
   title: "Preorder Bonus | Jeffrey the Monster",
   description: "Get exclusive bonuses when you preorder 'Jeffrey the Monster', including a free coloring book!",
 };
 
-export default function preorderBonusPage() {
+export default function PreorderBonusPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-20">
       <div className="text-center mb-12">
@@ -18,36 +18,29 @@ export default function preorderBonusPage() {
         </p>
       </div>
 
+      {/* This new section uses the data correctly */}
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        {/* Bonus 1: A Coloring Book */}
-        <div className="comic-panel p-8 flex flex-col items-center text-center">
-          <Image 
-            src="/images/preorder/bonus_1.jpg" 
-            alt="Sketch of Jeffrey and Barry in a classroom" 
-            width={400} 
-            height={300} 
-            className="object-contain mb-6 border-2 border-light-text dark:border-dark-text" 
-          />
-          <h2 className="text-4xl mb-4">Free Coloring Book!</h2>
-          <p className="font-body text-lg/relaxed flex-grow">
-            Every preorder of "Jeffrey the Monster - Talent Show Magic" comes with a <span className="font-bold">FREE</span> digital coloring book featuring your favorite characters and scenes from the story.
-          </p>
-        </div>
+        {preorderBonuses.map((bonus) => (
+          <div key={bonus.id} className="comic-panel p-8 flex flex-col items-center text-center">
+            
+            <div className="relative w-full h-72 mb-6">
+              <Image 
+                src={bonus.src} 
+                alt={bonus.alt} 
+                fill
+                className="object-contain border-2 border-light-text dark:border-dark-text" 
+              />
+            </div>
 
-        {/* Bonus 2: Limited Edition! */}
-        <div className="comic-panel p-8 flex flex-col items-center text-center">
-          <Image 
-            src="/images/preorder/bonus_2.jpg" 
-            alt="Sketch of various comic panels" 
-            width={400} 
-            height={300} 
-            className="object-contain mb-6 border-2 border-light-text dark:border-dark-text" 
-          />
-          <h2 className="text-4xl mb-4">Ultra-Limited Edition</h2>
-          <p className="font-body text-lg/relaxed flex-grow">
-            The <span className="font-bold text-accent-purple dark:text-accent-purple">first three (3) preorders</span> will receive an exclusive, limited-edition script/sketch draft version of the book. This draft includes the original script and rough panel artwork, detailing the creative process from idea to final page.
-          </p>
-        </div>
+            <h2 className="text-4xl mb-4">{bonus.title}</h2>
+            
+            <p 
+              className="font-body text-lg/relaxed flex-grow"
+              dangerouslySetInnerHTML={{ __html: bonus.description }}
+            />
+
+          </div>
+        ))}
       </div>
 
       <div className="text-center mt-12">

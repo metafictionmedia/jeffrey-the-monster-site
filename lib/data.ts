@@ -39,8 +39,25 @@ export const conceptArtImages = [
     "/images/concept art/first concept image jeffree smonty .jpg",
     "/images/concept art/IMG_6057.jpg",
     "/images/concept art/IMG_5965.jpg",
+    "/images/concept art/robot_chaos_garage_panel.jpg"
 ];
 
+export const preorderBonuses = [
+  {
+    id: 1,
+    src: '/images/preorder/bonus_1.jpg',
+    alt: 'Sketch of Jeffrey and Barry in a classroom',
+    title: 'Free Coloring Book!',
+    description: 'Every preorder of "Jeffrey the Monster - Talent Show Magic" comes with a <span class="font-bold">FREE</span> digital coloring book featuring your favorite characters and scenes from the story.'
+  },
+  {
+    id: 2,
+    src: '/images/preorder/bonus_2.jpg',
+    alt: 'Sketch of various comic panels',
+    title: 'Ultra-Limited Edition',
+    description: 'The <span class="font-bold text-accent-purple dark:text-accent-purple">first three (3) preorders</span> will receive an exclusive, limited-edition script/sketch draft version of the book. This draft includes the original script and rough panel artwork, detailing the creative process from idea to final page.'
+  }
+];
 
 export type Character = typeof characters[keyof typeof characters];
 export type CharacterId = keyof typeof characters;
