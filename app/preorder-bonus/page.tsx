@@ -1,14 +1,14 @@
 import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
 import type { Metadata } from "next";
-import { preorderBonuses } from "@/lib/data";
+import { preorderBonusInfo } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Preorder Bonus | Jeffrey the Monster",
   description: "Get exclusive bonuses when you preorder 'Jeffrey the Monster', including a free coloring book!",
 };
 
-export default function PreorderBonusPage() {
+export default function preorderBonusPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-20">
       <div className="text-center mb-12">
@@ -19,7 +19,7 @@ export default function PreorderBonusPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        {/* Bonus 1: Coloring Book */}
+        {/* Bonus 1: A Coloring Book */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/preorder/bonus_1.jpg" 
@@ -34,7 +34,7 @@ export default function PreorderBonusPage() {
           </p>
         </div>
 
-        {/* Bonus 2: Limited Edition */}
+        {/* Bonus 2: Limited Edition! */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
             src="/images/preorder/bonus_2.jpg" 
