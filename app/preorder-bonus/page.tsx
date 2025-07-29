@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
 import type { Metadata } from "next";
+import { preorderBonuses } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Preorder Bonus | Jeffrey the Monster",
@@ -21,7 +22,7 @@ export default function PreorderBonusPage() {
         {/* Bonus 1: Coloring Book */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
-            src="/images/concept art/IMG_6005.jpg" 
+            src="/images/concept art/Coloring book.jpg" 
             alt="Sketch of Jeffrey and Barry in a classroom" 
             width={400} 
             height={300} 
@@ -36,7 +37,7 @@ export default function PreorderBonusPage() {
         {/* Bonus 2: Limited Edition */}
         <div className="comic-panel p-8 flex flex-col items-center text-center">
           <Image 
-            src="/images/concept art/IMG_6007.jpg" 
+            src="/images/concept art/script_sketch_draft_pages_1_and_2.jpg" 
             alt="Sketch of various comic panels" 
             width={400} 
             height={300} 
