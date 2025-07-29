@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import ShopifyBuyButton from './ShopifyBuyButton';
-import { Product } from '@/data'; // Assuming data.ts is in src/
+import { Product } from '../lib/data';
+
 
 interface ProductCardProps {
   product: Product;
