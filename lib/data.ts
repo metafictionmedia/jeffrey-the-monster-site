@@ -179,3 +179,4 @@ export const storeProducts: Product[] = [
     buttonText: 'Take my money!'
   }
 ];
+

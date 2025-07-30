@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 declare global {
   interface Window {
@@ -15,13 +15,14 @@ interface ShopifyBuyButtonProps {
 
 const ShopifyBuyButton = ({ productId, buttonText }: ShopifyBuyButtonProps) => {
   const componentId = `product-component-${productId}`;
+  const hasInitialized = useRef(false);
 
   useEffect(() => {
     const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    const scriptExists = document.querySelector(`script[src="${scriptURL}"]` );
+    const scriptId = 'shopify-buy-sdk';
 
     const ShopifyBuyInit = () => {
-      if (!window.ShopifyBuy) {
+      if (hasInitialized.current || !window.ShopifyBuy) {
         return;
       }
 
@@ -112,17 +113,27 @@ const ShopifyBuyButton = ({ productId, buttonText }: ShopifyBuyButtonProps) => {
           },
         });
       });
+      hasInitialized.current = true;
     };
 
-    if (window.ShopifyBuy && window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else if (!scriptExists) {
+    const scriptExists = document.getElementById(scriptId);
+
+    if (!scriptExists) {
       const script = document.createElement('script');
-      script.async = true;
+      script.id = scriptId;
       script.src = scriptURL;
+      script.async = true;
       document.body.appendChild(script);
-      script.onload = ShopifyBuyInit;
+      script.onload = () => {
+        window.dispatchEvent(new Event('shopify-script-loaded'));
+      };
     }
+
+    window.addEventListener('shopify-script-loaded', ShopifyBuyInit);
+
+    return () => {
+      window.removeEventListener('shopify-script-loaded', ShopifyBuyInit);
+    };
   }, [productId, buttonText, componentId]);
 
   return <div id={componentId}></div>;

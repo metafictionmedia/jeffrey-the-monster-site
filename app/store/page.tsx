@@ -13,7 +13,7 @@ export default function StorePage() {
       <div className="text-center mb-12">
         <h1 className="text-5xl md:text-7xl mb-4">Official Store</h1>
         <p className="font-body text-xl text-light-text-secondary dark:text-dark-text-secondary max-w-2xl mx-auto">
-          Get official 'Jeffrey the Monster' merchandise. Every purchase helps support the creation of future stories!
+          Get official &apos;Jeffrey the Monster&apos; merchandise. Every purchase helps support the creation of future stories!
         </p>
       </div>
 
