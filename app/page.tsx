@@ -11,11 +11,8 @@ export default function HomePage() {
         <ThemeToggle />
       </div>
 
-      {/* --- MOBILE LAYOUT (Visible on small screens, hidden on medium and up) --- */}
+      {/* --- MOBILE LAYOUT --- */}
       <div className="flex flex-col gap-4 md:hidden">
-        <div className="comic-panel relative overflow-hidden h-64">
-          <ImageSlideshow images={homepageSlideshowImages} />
-        </div>
         <div className="comic-panel flex items-center justify-center p-4 h-40">
           <Image
             src="/images/logos/current jeffrey logo homepage.PNG"
@@ -25,12 +22,6 @@ export default function HomePage() {
             className="object-contain h-full w-auto"
           />
         </div>
-        <div className="comic-panel p-6 relative">
-          <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
-          <p className="font-body text-base/relaxed text-light-text-secondary dark:text-dark-text-secondary">
-            {synopsis}
-          </p>
-        </div>
         <div className="comic-panel flex flex-col items-center justify-evenly p-4 gap-4">
           <ComicButton href="/story">Story</ComicButton>
           <ComicButton href="/characters">Characters</ComicButton>
@@ -38,9 +29,18 @@ export default function HomePage() {
           <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
           <ComicButton href="/store">Store</ComicButton>
         </div>
+        <div className="comic-panel relative overflow-hidden h-64">
+          <ImageSlideshow images={homepageSlideshowImages} />
+        </div>
+        <div className="comic-panel p-6 relative">
+          <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
+          <p className="font-body text-base/relaxed text-light-text-secondary dark:text-dark-text-secondary">
+            {synopsis}
+          </p>
+        </div>
       </div>
 
-      {/* --- DESKTOP LAYOUT (Hidden on small screens, visible as a grid on medium and up) --- */}
+      {/* --- DESKTOP LAYOUT --- */}
       <div className="hidden h-full w-full md:grid md:grid-cols-3 md:grid-rows-3 gap-4">
         {/* Panel 1: Logo */}
         <div className="md:col-span-1 md:row-span-1 comic-panel flex items-center justify-center p-4">
@@ -53,26 +53,26 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Panel 2: Hero Slideshow */}
+        {/* Panel 2: Navigation - Top Right */}
+        <div className="md:col-span-2 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
+          <ComicButton href="/story">Story</ComicButton>
+          <ComicButton href="/characters">Characters</ComicButton>
+          <ComicButton href="/creator">Creator</ComicButton>
+          <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
+          <ComicButton href="/store">Store</ComicButton>
+        </div>
+
+        {/* Panel 3: Hero Slideshow */}
         <div className="md:col-span-2 md:row-span-2 comic-panel relative overflow-hidden">
           <ImageSlideshow images={homepageSlideshowImages} />
         </div>
 
-        {/* Panel 3: Synopsis */}
+        {/* Panel 4: Synopsis */}
         <div className="md:col-span-1 md:row-span-2 comic-panel p-6 flex flex-col justify-center relative">
           <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
           <p className="font-body text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary">
             {synopsis}
           </p>
-        </div>
-
-        {/* Panel 4: CTAs */}
-        <div className="md:col-span-3 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
-            <ComicButton href="/story">Story</ComicButton>
-            <ComicButton href="/characters">Characters</ComicButton>
-            <ComicButton href="/creator">Creator</ComicButton>
-            <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
-            <ComicButton href="/store">Store</ComicButton>
         </div>
       </div>
     </div>

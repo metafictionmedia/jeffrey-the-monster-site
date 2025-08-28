@@ -1,3 +1,4 @@
+import ImageSlideshow from "@/components/ImageSlideshow";
 import Image from "next/image";
 import { synopsis, conceptArtImages } from "@/lib/data";
 import type { Metadata } from "next";
@@ -37,18 +38,12 @@ export default function StoryPage() {
       </section>
 
       {/* --- Concept Art Section --- */}
-      <section>
-        <h2 className="text-4xl sm:text-5xl text-center mb-8">Concept Art</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {conceptArtImages.map((src, index) => (
-            <div key={index} className="comic-panel p-2">
-              <div className="relative aspect-square">
-                <Image src={src} alt="Concept art" fill className="object-cover" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+<section>
+  <h2 className="text-4xl sm:text-5xl text-center mb-8">Concept Art</h2>
+  <div className="comic-panel relative overflow-hidden h-96">
+    <ImageSlideshow images={conceptArtImages} />
+  </div>
+</section>
     </div>
   );
 }
