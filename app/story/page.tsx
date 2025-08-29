@@ -20,8 +20,7 @@ export default function StoryPage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-light-text dark:text-dark-text mb-6">
             Talent Show Magic
           </h2>
-          <p className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary">
-            {<div className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary space-y-4">
+          <div className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary space-y-4">
             <p>
               <strong>The Story</strong> Jeffrey the Monster didn't ask to be the new kid. He didn't ask to start over in a strange neighborhood, in a school where nobody knows him, and where the most popular kid just happens to be another puppet. But life rarely asks permission—it just hands you a mess and dares you to figure it out.
             </p>
@@ -37,8 +36,7 @@ export default function StoryPage() {
             <p>
               And through all the drama, sharp comebacks, and questionable decisions, I'll be here to keep things honest. Not to help, not to fix, but to make sure you don't miss a single running gag, subtle homage, or hidden clue that takes the whole thing from confusing to coherent. Otherwise, you might just mistake the smoke and mirrors for a monster and his magic. Don't ask me what it means—it just sounded good.
             </p>
-          </div>}
-          </p>
+          </div>
         </div>
         <div className="comic-panel p-6 md:p-8 text-center">
           <h3 className="text-3xl md:text-4xl mb-4">Release Information</h3>
