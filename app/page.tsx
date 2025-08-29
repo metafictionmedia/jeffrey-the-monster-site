@@ -53,9 +53,7 @@ export default function HomePage() {
             className="object-contain"
           />
         </div>
-        {/* --- NEWS FEED SECTION --- */}
-      <NewsFeed items={newsItems} maxItems={3} />
-
+       
         {/* Panel 2: Navigation - Top Right */}
         <div className="md:col-span-2 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
           <ComicButton href="/story">Story</ComicButton>
@@ -78,6 +76,10 @@ export default function HomePage() {
           </p>
         </div>
       </div>
+      <div>
+      </div>
+       {/* --- NEWS FEED SECTION --- */}
+      <NewsFeed items={newsItems} maxItems={3} />
     </div>
   );
 }
