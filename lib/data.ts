@@ -203,3 +203,12 @@ export type ComicPage = {
   image: string;
   description?: string;
 };
+export const newsItems: NewsItem[] = [];
+
+export type NewsItem = {
+  id: string;
+  title: string;
+  content: string;
+  date: string;
+  author?: string;
+};

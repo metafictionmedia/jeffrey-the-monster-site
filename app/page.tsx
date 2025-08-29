@@ -1,7 +1,8 @@
 import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
 import ComicShowcase from "@/components/ComicShowcase";
-import { synopsis, comicPages } from "@/lib/data";
+import NewsFeed from "@/components/NewsFeed";
+import { synopsis, comicPages, newsItems} from "@/lib/data";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function HomePage() {
@@ -52,6 +53,8 @@ export default function HomePage() {
             className="object-contain"
           />
         </div>
+        {/* --- NEWS FEED SECTION --- */}
+      <NewsFeed items={newsItems} maxItems={3} />
 
         {/* Panel 2: Navigation - Top Right */}
         <div className="md:col-span-2 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
