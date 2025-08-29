@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const navLinks = [
+    { href: "/", label: "Home" },
     { href: "/story", label: "Story" },
     { href: "/characters", label: "Characters" },
     { href: "/creator", label: "Creator" },
