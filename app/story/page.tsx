@@ -1,8 +1,7 @@
 import ImageSlideshow from "@/components/ImageSlideshow";
 import Image from "next/image";
-import { storyPageSynopsis, conceptArtImages } from "@/lib/data";
-import type { Metadata } from "next";
-
+import { storyPageSynopsis } from "@/lib/data";
+import { getRandomShowcaseImages } from "@/lib/showcaseImages";import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "The Story | Jeffrey the Monster",
   description: "Learn about the story, release date, and concept art for 'Jeffrey the Monster - Talent Show Magic'.",
@@ -42,7 +41,7 @@ export default function StoryPage() {
       {/* --- Concept Art Section --- */}
 <section>
   <h2 className="text-4xl sm:text-5xl text-center mb-8">Concept Art</h2>
-<div className="comic-panel relative overflow-hidden aspect-square">    <ImageSlideshow images={conceptArtImages} />
+<div className="comic-panel relative overflow-hidden aspect-square">    <ImageSlideshow images={getRandomShowcaseImages(8)} />
   </div>
 </section>
     </div>
