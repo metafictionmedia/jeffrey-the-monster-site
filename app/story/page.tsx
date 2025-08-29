@@ -20,9 +20,11 @@ export default function StoryPage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-light-text dark:text-dark-text mb-6">
             Talent Show Magic
           </h2>
-          <p className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary">
-            {storyPageSynopsis}
-          </p>
+          <div className="font-body text-base md:text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary space-y-4">
+  {storyPageSynopsis.split('\n\n').map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
+  ))}
+</div>
         </div>
         <div className="comic-panel p-6 md:p-8 text-center">
           <h3 className="text-3xl md:text-4xl mb-4">Release Information</h3>
@@ -40,8 +42,7 @@ export default function StoryPage() {
       {/* --- Concept Art Section --- */}
 <section>
   <h2 className="text-4xl sm:text-5xl text-center mb-8">Concept Art</h2>
-  <div className="comic-panel relative overflow-hidden h-96">
-    <ImageSlideshow images={conceptArtImages} />
+<div className="comic-panel relative overflow-hidden aspect-square">    <ImageSlideshow images={conceptArtImages} />
   </div>
 </section>
     </div>

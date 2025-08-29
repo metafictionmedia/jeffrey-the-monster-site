@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
-import ImageSlideshow from "@/components/ImageSlideshow";
-import { synopsis, homepageSlideshowImages } from "@/lib/data";
+import ComicShowcase from "@/components/ComicShowcase";
+import { synopsis, comicPages } from "@/lib/data";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function HomePage() {
@@ -30,8 +30,8 @@ export default function HomePage() {
           <ComicButton href="/store">Store</ComicButton>
         </div>
         <div className="comic-panel relative overflow-hidden h-64">
-          <ImageSlideshow images={homepageSlideshowImages} />
-        </div>
+  <ComicShowcase pages={comicPages} />
+</div>
         <div className="comic-panel p-6 relative">
           <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
           <p className="font-body text-base/relaxed text-light-text-secondary dark:text-dark-text-secondary">
@@ -62,10 +62,10 @@ export default function HomePage() {
           <ComicButton href="/store">Store</ComicButton>
         </div>
 
-        {/* Panel 3: Hero Slideshow */}
-        <div className="md:col-span-2 md:row-span-2 comic-panel relative overflow-hidden">
-          <ImageSlideshow images={homepageSlideshowImages} />
-        </div>
+       {/* Panel 3: Comic Showcase */}
+<div className="md:col-span-2 md:row-span-2 comic-panel relative overflow-hidden">
+  <ComicShowcase pages={comicPages} />
+</div>
 
         {/* Panel 4: Synopsis */}
         <div className="md:col-span-1 md:row-span-2 comic-panel p-6 flex flex-col justify-center relative">

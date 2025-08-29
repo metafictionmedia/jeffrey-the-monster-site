@@ -195,4 +195,11 @@ export const storeProducts: Product[] = [
     buttonText: 'Take my money!'
   }
 ];
+export const comicPages: ComicPage[] = [];
 
+export type ComicPage = {
+  id: string;
+  title: string;
+  image: string;
+  description?: string;
+};
