@@ -12,27 +12,40 @@ export const characters = {
   barry: {
     id: 'barry',
     name: "Barry",
-    image: "/images/characters/New Barry.jpg", // Using the new colored image
+    image: "/images/characters/barry_1.jpg",
     bio: "Barry is the kind of kid most people overlook—until he opens his mouth. He has a habit of explaining things no one asked about, blurting out facts or backstories like he's trying to make sense of the world before it slips away. One thing he'll never do is lie; Barry tells the truth even when it makes situations harder, which, for a middle-schooler, is saying a lot. At home, things aren't easy, though Barry rarely talks about it directly. He's learned to shrug off blame, laugh at the wrong times, and keep going no matter what. That quiet resilience is what makes him unshaken by Jeffrey—next to the chaos Barry already knows, a sarcastic monster isn't nearly as scary. Most kids don't get why Barry insists Jeffrey is his best friend, but Barry doesn't care. Loyalty, to him, isn't optional. He may not be the loudest, the smartest, or the most popular, but he's the one who sticks around. And in a world where most people look away, that makes him one of a kind."
   },
   smonty: {
     id: 'smonty',
     name: "sMonty",
-    image: "/images/characters/smonty.jpg", 
-    bio: "Smonty—short for Smontgomery, though he insists on the full version whenever possible—is the most popular kid at school, at least on the surface. His hyper energy and constant chatter mean he's everywhere at once, bouncing from group to group like a frog skipping across floating logs. Everyone knows him, but very few stick around long enough to really know him. That's the paradox of Smonty: he's surrounded by people, yet has almost no close friends. He dreams big—fame, spotlight, the works—and sees himself as destined to follow in the footsteps of legendary puppet actors whose names are somehow always on the tip of your tongue. His short attention span and need for constant movement make him hard to pin down, but they also keep him in the middle of everything happening at school. Jeffrey, though, is the one thing Smonty can't shrug off. As the only other puppet in class, Jeffrey represents everything Smonty doesn't want puppets to be: quiet, sarcastic, unwilling to play along. To Smonty, that feels like a personal insult, and he can't let it go. Their clash isn't just about personalities—it's about identity, and Smonty isn't the type to back down." 
+    image: "/images/characters/smonty_1.jpg",
+    bio: "Smonty—short for Smontgomery, though he insists on the full version whenever possible—is the most popular kid at school, at least on the surface. His hyper energy and constant chatter mean he's everywhere at once, bouncing from group to group like a frog skipping across floating logs. Everyone knows him, but very few stick around long enough to really know him. That's the paradox of Smonty: he's surrounded by people, yet has almost no close friends. He dreams big—fame, spotlight, the works—and sees himself as destined to follow in the footsteps of legendary puppet actors whose names are somehow always on the tip of your tongue. His short attention span and need for constant movement make him hard to pin down, but they also keep him in the middle of everything happening at school. Jeffrey, though, is the one thing Smonty can't shrug off. As the only other puppet in class, Jeffrey represents everything Smonty doesn't want puppets to be: quiet, sarcastic, unwilling to play along. To Smonty, that feels like a personal insult, and he can't let it go. Their clash isn't just about personalities—it's about identity, and Smonty isn't the type to back down."
   },
   sam: {
     id: 'sam',
     name: "Sam",
-    image: "/images/characters/sam 2.jpg", 
+    image: "/images/characters/sam_1.jpg", 
     bio: "Sam is the kind of student teachers love—sharp, serious, and always one step ahead of the lesson. Her classmates, though, aren't always sure what to make of her. She doesn't waste words, she doesn't play along with nonsense, and she definitely doesn't put up with bullies. Where others laugh or stay quiet, Sam speaks up, even when it costs her. She's not interested in popularity contests or fitting into neat little boxes. Sam values fairness and has no patience for people who try to get by on charm or shortcuts. She's the type to roll her eyes when others lose focus, but she's also the one who will hold things together when everything starts to fall apart. Sam may not call herself a leader, but her calm confidence and blunt honesty give her a gravity that others can't ignore. Whether her classmates admit it or not, the room always feels a little different when Sam's in it."  
   },
   narrator: {
     id: 'narrator',
     name: "The Narrator",
     image: "",
-  bio: "The Narrator was never supposed to be part of the story. He doesn't go to the school, he doesn't live in the neighborhood, and technically, he doesn't even exist. But someone has to keep track of all the eye-rolling, storm-off arguments, and poorly thought-out decisions these kids keep making. He'll tell you he's impartial. He isn't. He'll say he doesn't interrupt. He does. And while he insists he's only here to explain what's happening, the truth is he's enjoying himself far too much." }
-  };
+    bio: "The Narrator was never supposed to be part of the story. He doesn't go to the school, he doesn't live in the neighborhood, and technically, he doesn't even exist. But someone has to keep track of all the eye-rolling, storm-off arguments, and poorly thought-out decisions these kids keep making. He'll tell you he's impartial. He isn't. He'll say he doesn't interrupt. He does. And while he insists he's only here to explain what's happening, the truth is he's enjoying himself far too much."
+  },
+  estelle: {
+    id: 'estelle',
+    name: "Estelle",
+    image: "/images/characters/estelle_1.jpg",
+    bio: "Estelle is the kind of mom who can turn even the smallest inconvenience into a full-scale household crisis. To Jeffrey, she is a walking storm system—loud, dramatic, and always convinced the universe is personally out to get her. She moves through the house in a bathrobe and curlers like a general surveying a battlefield, prepared to blame anyone in sight for whatever has gone wrong that day. Estelle prides herself on being a \"proper lady,\" which makes the constant chaos around her feel, to her mind, like a direct assault on her personal dignity. Beneath all the shouting and finger-pointing, though, she worries deeply about her family and wants everything to be perfect—even if her version of \"perfect\" usually ends with someone being accused of ruining dinner. She's quick to escalate, quicker to assume the worst, and absolutely certain she is never, ever the problem."
+  },
+  jerry: {
+    id: 'jerry',
+    name: "Jerry",
+    image: "/images/characters/jerry_1.jpg",
+    bio: "Jerry is a force of nature—loud, blunt, and always ready for an argument he's convinced he's winning. To Jeffrey, he's less a dad and more a foghorn with opinions, booming through the house with the confidence of someone who has never once questioned his own logic. Jerry believes every problem can be solved by raising his voice and every misunderstanding is someone else's fault. He carries himself like a suburban philosopher-king, declaring his thoughts as if the world has been waiting for them. Whether he's lecturing the TV, misreading a situation entirely, or overreacting to something tiny, Jerry remains a constant, chaotic presence in Jeffrey's life—unpredictable, intense, and absolutely certain he knows best."
+  }
+};
 
 export const homepageSlideshowImages = [
     "/images/concept art/corrected_comic_panel.jpg",
@@ -58,22 +71,12 @@ And stories like this aren't really about fitting in—unless we're talking abou
 
 And through all the drama, sharp comebacks, and questionable decisions, I'll be here to keep things honest. Not to help, not to fix, but to make sure you don't miss a single running gag, subtle homage, or hidden clue that takes the whole thing from confusing to coherent. Otherwise, you might just mistake the smoke and mirrors for a monster and his magic. Don't ask me what it means—it just sounded good.`;
 
-export const preorderBonuses = [
-  {
-    id: 1,
-    src: '/images/preorder/bonus_1.jpg',
-    alt: 'Sketch of Jeffrey and Barry in a classroom',
-    title: 'Free Coloring Book!',
-    description: 'Every preorder of "Jeffrey the Monster - Talent Show Magic" comes with a <span class="font-bold">FREE</span> digital coloring book featuring your favorite characters and scenes from the story.'
-  },
-  {
-    id: 2,
-    src: '/images/preorder/bonus_2.jpg',
-    alt: 'Sketch of various comic panels',
-    title: 'Ultra-Limited Edition',
-    description: 'The <span class="font-bold text-accent-purple dark:text-accent-purple">first three (3) preorders</span> will receive an exclusive, limited-edition script/sketch draft version of the book. This draft includes the original script and rough panel artwork, detailing the creative process from idea to final page.'
-  }
-];
+export const limitedEditionInfo = {
+  src: '/images/preorder/bonus_2.jpg',
+  alt: 'Sketch of various comic panels',
+  title: 'Limited Edition Drawing!',
+  description: 'Sign up for our email list to be automatically entered into a drawing! <span class="font-bold text-accent-purple dark:text-accent-purple">Three (3) random winners</span> will receive an exclusive, limited-edition script/concept art draft version of the book when they purchase the official graphic novel. This collector\'s edition includes the original script and rough panel artwork, revealing the creative journey from concept to final page. Winners who preorder will receive both items early, while all winners are guaranteed the limited edition draft regardless of when they purchase!'
+};
 
 export type Character = typeof characters[keyof typeof characters];
 export type CharacterId = keyof typeof characters;
@@ -212,3 +215,33 @@ export type NewsItem = {
   date: string;
   author?: string;
 };
+
+export type ComicStrip = {
+  id: string;
+  title: string;
+  images: string[];
+  publishDate: string;
+  description?: string;
+  altText?: string;
+};
+
+export const comicStrips: ComicStrip[] = [
+  {
+    id: 'family-dinner',
+    title: 'Family Dinner',
+    images: [
+      '/images/funnies/Funnies_001.png',
+      '/images/funnies/Funnies_002.png',
+      '/images/funnies/Funnies_003.png',
+      '/images/funnies/Funnies_004.png',
+      '/images/funnies/Funnies_005.png',
+      '/images/funnies/Funnies_006.png',
+      '/images/funnies/Funnies_007.png',
+      '/images/funnies/Funnies_008.png',
+      '/images/funnies/Funnies_009.png',
+    ],
+    publishDate: '2025-11-28',
+    description: 'Jeffrey enjoys a nice meal with his parents.',
+    altText: 'Family Dinner comic strip'
+  }
+];

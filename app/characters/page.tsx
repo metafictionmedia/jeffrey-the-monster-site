@@ -28,7 +28,7 @@ export default function CharactersPage() {
                 src={char.image}
                 alt={`Portrait of ${char.name}`}
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                className="object-cover object-top group-hover:scale-110 transition-transform duration-300"
               />
             </div>
             <h2 className="text-3xl">{char.name}</h2>

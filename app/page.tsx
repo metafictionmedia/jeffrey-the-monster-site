@@ -2,7 +2,7 @@ import Image from "next/image";
 import ComicButton from "@/components/ComicButton";
 import ComicShowcase from "@/components/ComicShowcase";
 import NewsFeed from "@/components/NewsFeed";
-import { synopsis, comicPages, newsItems} from "@/lib/data";
+import { synopsis, comicStrips, newsItems} from "@/lib/data";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function HomePage() {
@@ -26,14 +26,19 @@ export default function HomePage() {
         <div className="comic-panel flex flex-col items-center justify-evenly p-4 gap-4">
           <ComicButton href="/story">Story</ComicButton>
           <ComicButton href="/characters">Characters</ComicButton>
+          <ComicButton href="/comics">Comics</ComicButton>
           <ComicButton href="/creator">Creator</ComicButton>
-          <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
+          <ComicButton href="/preorder-bonus">Extras</ComicButton>
           <ComicButton href="/store">Store</ComicButton>
         </div>
         <div className="comic-panel relative overflow-hidden h-64">
-  <ComicShowcase pages={comicPages} />
-</div>
+          <ComicShowcase comics={comicStrips.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())} />
+        </div>
+        <NewsFeed items={newsItems} maxItems={3} />
         <div className="comic-panel p-6 relative">
+          <h2 className="font-heading text-3xl md:text-4xl mb-4 text-center text-light-text-primary dark:text-dark-text-primary">
+            Part One Coming Soon...
+          </h2>
           <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
           <p className="font-body text-base/relaxed text-light-text-secondary dark:text-dark-text-secondary">
             {synopsis}
@@ -58,28 +63,35 @@ export default function HomePage() {
         <div className="md:col-span-2 md:row-span-1 comic-panel flex items-center justify-evenly p-4 gap-4">
           <ComicButton href="/story">Story</ComicButton>
           <ComicButton href="/characters">Characters</ComicButton>
+          <ComicButton href="/comics">Comics</ComicButton>
           <ComicButton href="/creator">Creator</ComicButton>
-          <ComicButton href="/preorder-bonus">Preorder Bonus</ComicButton>
+          <ComicButton href="/preorder-bonus">Extras</ComicButton>
           <ComicButton href="/store">Store</ComicButton>
         </div>
 
        {/* Panel 3: Comic Showcase */}
-<div className="md:col-span-2 md:row-span-2 comic-panel relative overflow-hidden">
-  <ComicShowcase pages={comicPages} />
-</div>
+        <div className="md:col-span-2 md:row-span-2 comic-panel relative overflow-hidden">
+          <ComicShowcase comics={comicStrips.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())} />
+        </div>
 
-        {/* Panel 4: Synopsis */}
-        <div className="md:col-span-1 md:row-span-2 comic-panel p-6 flex flex-col justify-center relative">
+        {/* Panel 4: News Feed */}
+        <div className="md:col-span-1 md:row-span-2">
+          <NewsFeed items={newsItems} maxItems={3} />
+        </div>
+      </div>
+
+      {/* --- SYNOPSIS SECTION --- */}
+      <div className="hidden md:block mt-4">
+        <div className="comic-panel p-6 relative">
+          <h2 className="font-heading text-3xl md:text-4xl mb-4 text-center text-light-text-primary dark:text-dark-text-primary">
+            Part One Coming Soon...
+          </h2>
           <div className="absolute -top-5 left-4 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[30px] border-b-light-card dark:border-b-dark-card"></div>
           <p className="font-body text-lg/relaxed text-light-text-secondary dark:text-dark-text-secondary">
             {synopsis}
           </p>
         </div>
       </div>
-      <div>
-      </div>
-       {/* --- NEWS FEED SECTION --- */}
-      <NewsFeed items={newsItems} maxItems={3} />
     </div>
   );
 }

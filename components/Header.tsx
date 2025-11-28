@@ -10,8 +10,9 @@ const navLinks = [
     { href: "/", label: "Home" },
     { href: "/story", label: "Story" },
     { href: "/characters", label: "Characters" },
+    { href: "/comics", label: "Comics" },
     { href: "/creator", label: "Creator" },
-    { href: "/preorder-bonus", label: "Bonus" },
+    { href: "/preorder-bonus", label: "Extras" },
     { href: "/store", label: "Store" },
 ];
 

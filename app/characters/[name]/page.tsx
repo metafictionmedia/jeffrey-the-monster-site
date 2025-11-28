@@ -46,7 +46,7 @@ export default function CharacterBioPage({ params }: Props) {
                 src={character.image}
                 alt={`Full portrait of ${character.name}`}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>
