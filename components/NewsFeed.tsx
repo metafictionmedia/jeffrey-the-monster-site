@@ -1,9 +1,15 @@
+import Image from "next/image";
+
 interface NewsItem {
   id: string;
   title: string;
   content: string;
   date: string;
   author?: string;
+  image?: string;
+  videoUrl?: string;
+  embedUrl?: string;
+  linkUrl?: string;
 }
 
 interface NewsFeedProps {
@@ -47,9 +53,60 @@ export default function NewsFeed({ items, maxItems = 3 }: NewsFeedProps) {
                   by {item.author}
                 </p>
               )}
+
+              {/* Image */}
+              {item.image && (
+                <div className="my-3 relative w-full h-48 rounded-lg overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
+
+              {/* Direct Video */}
+              {item.videoUrl && (
+                <div className="my-3">
+                  <video
+                    controls
+                    className="w-full rounded-lg"
+                    preload="metadata"
+                  >
+                    <source src={item.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              )}
+
+              {/* Social Media Embed */}
+              {item.embedUrl && (
+                <div className="my-3">
+                  <iframe
+                    src={item.embedUrl}
+                    className="w-full h-96 rounded-lg"
+                    frameBorder="0"
+                    allowFullScreen
+                  />
+                </div>
+              )}
+
               <p className="text-light-text-secondary dark:text-dark-text-secondary">
                 {item.content}
               </p>
+
+              {/* External Link */}
+              {item.linkUrl && (
+                <a
+                  href={item.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-accent-purple hover:text-accent-purple-dark dark:hover:text-accent-purple font-semibold text-sm"
+                >
+                  View on Instagram →
+                </a>
+              )}
             </article>
           ))}
         </div>

@@ -28,7 +28,7 @@ export default function StoryPage() {
         <div className="comic-panel p-6 md:p-8 text-center">
           <h3 className="text-3xl md:text-4xl mb-4">Release Information</h3>
           <p className="text-lg md:text-xl font-body mb-6">
-            Part One is targeted for release in <span className="font-bold text-accent-green-dark dark:text-accent-green">October-November 2025</span>.
+            Part One is targeted for release in <span className="font-bold text-accent-green-dark dark:text-accent-green">Early 2026</span>.
           </p>
           <div className="border-t border-light-border dark:border-dark-border my-6"></div>
           <h3 className="text-3xl md:text-4xl mb-4">Created By</h3>

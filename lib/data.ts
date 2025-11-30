@@ -214,6 +214,10 @@ export type NewsItem = {
   content: string;
   date: string;
   author?: string;
+  image?: string;       // Path to image file
+  videoUrl?: string;    // Direct link to video file (.mp4, .webm)
+  embedUrl?: string;    // Instagram/YouTube/TikTok embed URL
+  linkUrl?: string;     // External link (e.g., to Instagram post)
 };
 
 export type ComicStrip = {
