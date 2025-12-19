@@ -256,7 +256,7 @@ export default function ProductPage() {
         Back to Store
       </Link>
 
-      <div className="bg-light-card dark:bg-dark-card rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+      <div className="bg-card dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
         <div id={product.componentId}></div>
       </div>
 
