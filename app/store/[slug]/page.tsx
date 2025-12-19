@@ -141,7 +141,8 @@ export default function ProductPage() {
                     'max-width': '100%',
                     'margin-left': '0px',
                     'margin-bottom': '0px'
-                  }
+                  },
+                  'background': 'transparent'
                 },
                 button: {
                   'font-family': 'Lato, sans-serif',
@@ -256,32 +257,34 @@ export default function ProductPage() {
         Back to Store
       </Link>
 
-      <div className="bg-slate-50 dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+      <div
+        className="rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700"
+        style={{ backgroundColor: isDark ? '#1f2937' : '#f8fafc' }}
+      >
         <div id={product.componentId}></div>
       </div>
 
       <style jsx global>{`
-        /* Force transparent backgrounds for all Shopify widget elements */
-        [id^="product-component"],
-        [id^="product-component"] *,
-        [id^="product-component"] .shopify-buy__product,
-        [id^="product-component"] .shopify-buy__product__variant-selectors,
-        [id^="product-component"] .shopify-buy__option-select,
-        [id^="product-component"] div,
-        [id^="product-component"] iframe {
+        /* Light mode - force dark text */
+        [id^="product-component"] *:not(button):not(input) {
+          color: #1a1a1a !important;
+        }
+        /* Dark mode - override ALL backgrounds and force white text */
+        .dark [id^="product-component"] *:not(button):not(input) {
+          color: #ffffff !important;
+        }
+        .dark [id^="product-component"] *:not(button):not(input):not(select) {
           background-color: transparent !important;
           background: transparent !important;
         }
-        /* Light mode - force dark text */
-        [id^="product-component"] *:not(button):not(input):not(select) {
-          color: #1a1a1a !important;
+        .dark [id^="product-component"] .shopify-buy__product,
+        .dark [id^="product-component"] .shopify-buy__product__variant-selectors,
+        .dark [id^="product-component"] .shopify-buy__option-select,
+        .dark [id^="product-component"] .shopify-buy__layout-vertical {
+          background-color: transparent !important;
+          background: transparent !important;
         }
-        /* Dark mode - force white text and dark input backgrounds */
-        .dark [id^="product-component"] *:not(button):not(input):not(select) {
-          color: #ffffff !important;
-        }
-        .dark [id^="product-component"] select,
-        .dark [id^="product-component"] input {
+        .dark [id^="product-component"] select {
           background-color: #374151 !important;
           color: #ffffff !important;
           border-color: #6b7280 !important;
