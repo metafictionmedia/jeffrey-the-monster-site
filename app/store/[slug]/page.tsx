@@ -51,7 +51,7 @@ export default function ProductPage() {
                 },
                 title: {
                   'font-size': '26px',
-                  'color': '#1a1a1a'
+                  'color': '#e5e7eb'
                 },
                 button: {
                   'font-family': 'Lato, sans-serif',
@@ -76,18 +76,18 @@ export default function ProductPage() {
                 },
                 price: {
                   'font-size': '18px',
-                  'color': '#1a1a1a'
+                  'color': '#e5e7eb'
                 },
                 compareAt: {
                   'font-size': '15.299999999999999px',
-                  'color': '#1a1a1a'
+                  'color': '#e5e7eb'
                 },
                 unitPrice: {
                   'font-size': '15.299999999999999px',
-                  'color': '#1a1a1a'
+                  'color': '#e5e7eb'
                 },
                 description: {
-                  'color': '#1a1a1a'
+                  'color': '#e5e7eb'
                 }
               },
               layout: 'vertical',
