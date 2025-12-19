@@ -257,10 +257,7 @@ export default function ProductPage() {
         Back to Store
       </Link>
 
-      <div
-        className="rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700"
-        style={{ backgroundColor: isDark ? '#1f2937' : '#f8fafc' }}
-      >
+      <div className="bg-card dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
         <div id={product.componentId}></div>
       </div>
 

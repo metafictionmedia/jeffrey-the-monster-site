@@ -15,6 +15,8 @@ const config: Config = {
         body: ["var(--font-comic-neue)"],
       },
       colors: {
+        // CSS Variable-based colors
+        card: "rgb(var(--card) / <alpha-value>)",
         // Light Mode Palette
         light: {
           background: "#ffffff", // White
