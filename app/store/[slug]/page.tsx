@@ -32,7 +32,7 @@ export default function ProductPage() {
         storefrontAccessToken: 'd9d8cc505f2ddcf4f7e5fa25779122eb',
       })
 
-      window.ShopifyBuy.UI.onReady(client).then(function (ui) {
+      window.ShopifyBuy.UI.onReady(client).then(function (ui: any) {
         ui.createComponent('product', {
           id: product!.shopifyId,
           node: document.getElementById(product!.componentId),
@@ -50,7 +50,8 @@ export default function ProductPage() {
                   'background': 'transparent'
                 },
                 title: {
-                  'font-size': '26px'
+                  'font-size': '26px',
+                  'color': '#1a1a1a'
                 },
                 button: {
                   'font-family': 'Lato, sans-serif',
@@ -74,15 +75,20 @@ export default function ProductPage() {
                   'padding-bottom': '17px'
                 },
                 price: {
-                  'font-size': '18px'
+                  'font-size': '18px',
+                  'color': '#1a1a1a'
                 },
                 compareAt: {
-                  'font-size': '15.299999999999999px'
+                  'font-size': '15.299999999999999px',
+                  'color': '#1a1a1a'
                 },
                 unitPrice: {
-                  'font-size': '15.299999999999999px'
+                  'font-size': '15.299999999999999px',
+                  'color': '#1a1a1a'
                 },
-                description: {}
+                description: {
+                  'color': '#1a1a1a'
+                }
               },
               layout: 'vertical',
               contents: {
@@ -228,6 +234,18 @@ export default function ProductPage() {
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
         <div id={product.componentId}></div>
       </div>
+
+      <style jsx global>{`
+        .dark [id^="product-component"] .shopify-buy__product__title,
+        .dark [id^="product-component"] .shopify-buy__product__price,
+        .dark [id^="product-component"] .shopify-buy__product__variant-title,
+        .dark [id^="product-component"] .shopify-buy__product__description,
+        .dark [id^="product-component"] .shopify-buy__option-select__label,
+        .dark [id^="product-component"] .shopify-buy__product__compare-at,
+        .dark [id^="product-component"] .shopify-buy__product__unit-price {
+          color: #ffffff !important;
+        }
+      `}</style>
     </div>
   )
 }

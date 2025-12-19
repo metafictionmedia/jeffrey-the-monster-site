@@ -29,7 +29,7 @@ export default function StorePage() {
         storefrontAccessToken: 'd9d8cc505f2ddcf4f7e5fa25779122eb',
       })
 
-      window.ShopifyBuy.UI.onReady(client).then(function (ui) {
+      window.ShopifyBuy.UI.onReady(client).then(function (ui: any) {
         shopifyProducts.forEach((product) => {
           const node = document.getElementById(`preview-${product.componentId}`)
           if (!node) return
