@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 
 export default function ExtrasPage() {
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20">
       <div className="text-center mb-12">
         <h1 className="text-5xl md:text-7xl text-accent-yellow-dark dark:text-accent-yellow">Extras!</h1>
         <p className="text-xl mt-4 font-body text-light-text-secondary dark:text-dark-text-secondary">
@@ -45,6 +46,7 @@ export default function ExtrasPage() {
 
       <div className="text-center mt-12">
         <ComicButton href="/store">Preorder Now!</ComicButton>
+      </div>
       </div>
     </div>
   );

@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 export default function StoryPage() {
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20 space-y-16">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20 space-y-16">
       {/* --- About the Book Section --- */}
       <section className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="comic-panel p-6 md:p-8">
@@ -44,6 +45,7 @@ export default function StoryPage() {
 <div className="comic-panel relative overflow-hidden aspect-square">    <ImageSlideshow images={getRandomShowcaseImages(8)} />
   </div>
 </section>
+      </div>
     </div>
   );
 }

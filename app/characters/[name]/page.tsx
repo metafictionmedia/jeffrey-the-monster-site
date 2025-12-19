@@ -37,7 +37,8 @@ export default function CharacterBioPage({ params }: Props) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20">
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-1">
           <div className="comic-panel p-4 max-w-sm mx-auto">
@@ -59,6 +60,7 @@ export default function CharacterBioPage({ params }: Props) {
                 </p>
             </div>
         </div>
+      </div>
       </div>
     </div>
   );

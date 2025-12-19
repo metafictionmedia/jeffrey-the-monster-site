@@ -12,7 +12,8 @@ export default function CharactersPage() {
   const characterList = Object.values(characters);
 
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20">
       <div className="text-center mb-12">
         <h1 className="text-5xl md:text-7xl">Meet the Cast</h1>
       </div>
@@ -34,6 +35,7 @@ export default function CharactersPage() {
             <h2 className="text-3xl">{char.name}</h2>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );

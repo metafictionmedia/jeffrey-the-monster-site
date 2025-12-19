@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 export default function CreatorPage() {
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20">
       <section>
         <h1 className="text-4xl sm:text-5xl text-center mb-8">About the Creator</h1>
         <div className="comic-panel p-6 md:p-8 grid md:grid-cols-3 gap-8 items-center md:items-start max-w-4xl mx-auto">
@@ -27,6 +28,7 @@ export default function CreatorPage() {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 }

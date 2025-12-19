@@ -220,7 +220,8 @@ export default function ProductPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 sm:py-20 bg-light-bg dark:bg-dark-bg min-h-screen">
+    <div className="min-h-screen bg-light-background dark:bg-dark-background bg-grid-light dark:bg-grid-dark bg-grid p-4">
+      <div className="container mx-auto px-4 py-12 sm:py-20">
       <Link
         href="/store"
         className="inline-flex items-center text-light-text dark:text-white hover:text-purple-600 mb-8 transition-colors"
@@ -255,6 +256,7 @@ export default function ProductPage() {
           color: #ffffff !important;
         }
       `}</style>
+      </div>
     </div>
   )
 }
