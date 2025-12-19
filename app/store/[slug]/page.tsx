@@ -261,21 +261,27 @@ export default function ProductPage() {
       </div>
 
       <style jsx global>{`
-        /* Force transparent backgrounds for Shopify widget in all modes */
+        /* Force transparent backgrounds for all Shopify widget elements */
+        [id^="product-component"],
+        [id^="product-component"] *,
         [id^="product-component"] .shopify-buy__product,
         [id^="product-component"] .shopify-buy__product__variant-selectors,
-        [id^="product-component"] .shopify-buy__option-select {
+        [id^="product-component"] .shopify-buy__option-select,
+        [id^="product-component"] div,
+        [id^="product-component"] iframe {
           background-color: transparent !important;
+          background: transparent !important;
         }
         /* Light mode - force dark text */
         [id^="product-component"] *:not(button):not(input):not(select) {
           color: #1a1a1a !important;
         }
-        /* Dark mode - force white text */
+        /* Dark mode - force white text and dark input backgrounds */
         .dark [id^="product-component"] *:not(button):not(input):not(select) {
           color: #ffffff !important;
         }
-        .dark [id^="product-component"] select {
+        .dark [id^="product-component"] select,
+        .dark [id^="product-component"] input {
           background-color: #374151 !important;
           color: #ffffff !important;
           border-color: #6b7280 !important;
