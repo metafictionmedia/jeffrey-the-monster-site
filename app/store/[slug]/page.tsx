@@ -256,23 +256,24 @@ export default function ProductPage() {
         Back to Store
       </Link>
 
-      <div className="bg-card dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+      <div className="bg-slate-50 dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
         <div id={product.componentId}></div>
       </div>
 
       <style jsx global>{`
+        /* Force transparent backgrounds for Shopify widget in all modes */
+        [id^="product-component"] .shopify-buy__product,
+        [id^="product-component"] .shopify-buy__product__variant-selectors,
+        [id^="product-component"] .shopify-buy__option-select {
+          background-color: transparent !important;
+        }
         /* Light mode - force dark text */
-        [id^="product-component"] *:not(button):not(input) {
+        [id^="product-component"] *:not(button):not(input):not(select) {
           color: #1a1a1a !important;
         }
         /* Dark mode - force white text */
-        .dark [id^="product-component"] *:not(button):not(input) {
+        .dark [id^="product-component"] *:not(button):not(input):not(select) {
           color: #ffffff !important;
-        }
-        .dark [id^="product-component"] .shopify-buy__product,
-        .dark [id^="product-component"] .shopify-buy__product__variant-selectors,
-        .dark [id^="product-component"] .shopify-buy__option-select {
-          background-color: transparent !important;
         }
         .dark [id^="product-component"] select {
           background-color: #374151 !important;
