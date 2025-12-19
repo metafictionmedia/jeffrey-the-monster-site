@@ -266,20 +266,14 @@ export default function ProductPage() {
         [id^="product-component"] *:not(button):not(input) {
           color: #1a1a1a !important;
         }
-        /* Dark mode - override ALL backgrounds and force white text */
+        /* Dark mode - force white text */
         .dark [id^="product-component"] *:not(button):not(input) {
           color: #ffffff !important;
         }
-        .dark [id^="product-component"] *:not(button):not(input):not(select) {
-          background-color: transparent !important;
-          background: transparent !important;
-        }
         .dark [id^="product-component"] .shopify-buy__product,
         .dark [id^="product-component"] .shopify-buy__product__variant-selectors,
-        .dark [id^="product-component"] .shopify-buy__option-select,
-        .dark [id^="product-component"] .shopify-buy__layout-vertical {
+        .dark [id^="product-component"] .shopify-buy__option-select {
           background-color: transparent !important;
-          background: transparent !important;
         }
         .dark [id^="product-component"] select {
           background-color: #374151 !important;
