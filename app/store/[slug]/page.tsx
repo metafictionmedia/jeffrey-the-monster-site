@@ -245,6 +245,15 @@ export default function ProductPage() {
         .dark [id^="product-component"] .shopify-buy__product__unit-price {
           color: #ffffff !important;
         }
+        .dark [id^="product-component"] .shopify-buy__product,
+        .dark [id^="product-component"] .shopify-buy__product__variant-selectors,
+        .dark [id^="product-component"] .shopify-buy__option-select {
+          background-color: transparent !important;
+        }
+        .dark [id^="product-component"] select {
+          background-color: #374151 !important;
+          color: #ffffff !important;
+        }
       `}</style>
     </div>
   )
