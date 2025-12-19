@@ -16,6 +16,8 @@ const config: Config = {
       },
       colors: {
         // CSS Variable-based colors
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
         card: "rgb(var(--card) / <alpha-value>)",
         // Light Mode Palette
         light: {
