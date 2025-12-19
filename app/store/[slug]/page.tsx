@@ -141,8 +141,7 @@ export default function ProductPage() {
                     'max-width': '100%',
                     'margin-left': '0px',
                     'margin-bottom': '0px'
-                  },
-                  'background': 'transparent'
+                  }
                 },
                 button: {
                   'font-family': 'Lato, sans-serif',
