@@ -237,7 +237,11 @@ export default function ProductPage() {
       </div>
 
       <style jsx global>{`
-        /* Force white text for all Shopify elements in dark mode */
+        /* Light mode - force dark text */
+        [id^="product-component"] *:not(button):not(input) {
+          color: #1a1a1a !important;
+        }
+        /* Dark mode - force white text */
         .dark [id^="product-component"] *:not(button):not(input) {
           color: #ffffff !important;
         }
