@@ -75,7 +75,7 @@ export default function ProductPage() {
                 },
                 title: {
                   'font-size': '26px',
-                  'color': isDark ? '#ffffff' : '#1a1a1a'
+                  'color': '#1a1a1a'
                 },
                 button: {
                   'font-family': 'Lato, sans-serif',
@@ -100,18 +100,18 @@ export default function ProductPage() {
                 },
                 price: {
                   'font-size': '18px',
-                  'color': isDark ? '#ffffff' : '#1a1a1a'
+                  'color': '#1a1a1a'
                 },
                 compareAt: {
                   'font-size': '15.299999999999999px',
-                  'color': isDark ? '#ffffff' : '#1a1a1a'
+                  'color': '#1a1a1a'
                 },
                 unitPrice: {
                   'font-size': '15.299999999999999px',
-                  'color': isDark ? '#ffffff' : '#1a1a1a'
+                  'color': '#1a1a1a'
                 },
                 description: {
-                  'color': isDark ? '#ffffff' : '#1a1a1a'
+                  'color': '#1a1a1a'
                 }
               },
               layout: 'vertical',
@@ -256,7 +256,7 @@ export default function ProductPage() {
           Back to Store
         </Link>
 
-        <div className="bg-card dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+        <div className="bg-slate-50 dark:bg-gray-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
           <div id={product.componentId}></div>
         </div>
       </div>
@@ -270,10 +270,10 @@ export default function ProductPage() {
         .dark [id^="product-component"] *:not(button):not(input) {
           color: #ffffff !important;
         }
-        .dark [id^="product-component"] .shopify-buy__product,
-        .dark [id^="product-component"] .shopify-buy__product__variant-selectors,
-        .dark [id^="product-component"] .shopify-buy__option-select {
+        /* Dark mode - TARGET the specific Shopify product class */
+        .dark .shopify-buy__product {
           background-color: transparent !important;
+          background: transparent !important;
         }
         .dark [id^="product-component"] select {
           background-color: #374151 !important;
